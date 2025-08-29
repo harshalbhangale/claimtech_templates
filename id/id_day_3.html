@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{firstName}}, Don't Let Your Claim Wait ⏳</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .content {
+            padding: 30px 25px;
+        }
+        .greeting {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        .main-text {
+            font-size: 16px;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+        .urgency-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .urgency-box h3 {
+            color: #856404;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .urgency-box p {
+            color: #856404;
+            margin: 0;
+            font-size: 15px;
+        }
+        .info-box {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        .info-box h3 {
+            color: #667eea;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+        .info-icon {
+            color: #28a745;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        .info-text {
+            flex: 1;
+            line-height: 1.5;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            text-align: center;
+        }
+        .highlight-box h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+        }
+        .highlight-box p {
+            margin: 0;
+            font-size: 16px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 20px 0;
+            transition: transform 0.2s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .header {
+                padding: 20px 15px;
+            }
+            .header h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://cdn.prod.website-files.com/66694ee74c4ff0ae3216508b/672c92d8a682009c4c78c21f_rmc_logo-p-800.png" alt="Resolve My Claim Logo" class="logo">
+            <h1>{{firstName}}, Don't Let Your Claim Wait ⏳</h1>
+        </div>
+        
+        <div class="content">
+            <div class="greeting">
+                Hi {{firstName}},
+            </div>
+            
+            <div class="main-text">
+                It's been 3 days since we requested your ID verification, and your car finance claim is still waiting to move forward. We don't want you to miss out on your potential compensation.
+            </div>
+            
+            <div class="urgency-box">
+                <h3>⚠️ Action Required</h3>
+                <p>Your claim cannot proceed without ID verification. This is a legal requirement for all financial claims.</p>
+            </div>
+            
+            <div class="info-box">
+                <h3>Quick Verification Process:</h3>
+                <div class="info-item">
+                    <span class="info-icon">📱</span>
+                    <div class="info-text">Takes just 2 minutes on your phone or computer</div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🔒</span>
+                    <div class="info-text">Bank-level security protects your information</div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">✅</span>
+                    <div class="info-text">Instant approval in most cases</div>
+                </div>
+            </div>
+            
+            <div class="main-text">
+                Thousands of customers have already completed their verification and are moving forward with their claims. Don't let yours fall behind.
+            </div>
+            
+            <div class="highlight-box">
+                <h3>Time is Running Out</h3>
+                <p>Complete your verification now to keep your claim active and moving toward compensation!</p>
+            </div>
+            
+            <div style="text-align: center;">
+                <a href="{{portalLink}}" class="cta-button">Complete Verification Now</a>
+            </div>
+            
+            <div class="main-text">
+                Still having trouble? Reply to this email, and our team will personally assist you with the verification process.
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Resolve My Claim</strong></p>
+            <p>We're here to help you reclaim what's rightfully yours.</p>
+        </div>
+    </div>
+</body>
+</html>

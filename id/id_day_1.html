@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{firstName}}, Don't Let Your Claim Stall 🚗</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .content {
+            padding: 30px 25px;
+        }
+        .greeting {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        .main-text {
+            font-size: 16px;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+        .info-box {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        .info-box h3 {
+            color: #667eea;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+        .info-icon {
+            color: #28a745;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        .info-text {
+            flex: 1;
+            line-height: 1.5;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            text-align: center;
+        }
+        .highlight-box h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+        }
+        .highlight-box p {
+            margin: 0;
+            font-size: 16px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 20px 0;
+            transition: transform 0.2s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .header {
+                padding: 20px 15px;
+            }
+            .header h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://cdn.prod.website-files.com/66694ee74c4ff0ae3216508b/672c92d8a682009c4c78c21f_rmc_logo-p-800.png" alt="Resolve My Claim Logo" class="logo">
+            <h1>{{firstName}}, Don't Let Your Claim Stall 🚗</h1>
+        </div>
+        
+        <div class="content">
+            <div class="greeting">
+                Hi {{firstName}},
+            </div>
+            
+            <div class="main-text">
+                We noticed you haven't completed your ID verification yet. This is the final step needed to move your car finance claim forward, and it only takes a couple of minutes.
+            </div>
+            
+            <div class="info-box">
+                <h3>Why ID Verification is Important:</h3>
+                <div class="info-item">
+                    <span class="info-icon">⚖️</span>
+                    <div class="info-text">Required by law for all financial claims</div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🛡️</span>
+                    <div class="info-text">Protects you from fraud and identity theft</div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🚀</span>
+                    <div class="info-text">Allows us to process your claim faster</div>
+                </div>
+            </div>
+            
+            <div class="main-text">
+                Without this verification, we can't proceed with your claim. The process is completely secure and uses bank-level encryption to protect your information.
+            </div>
+            
+            <div class="highlight-box">
+                <h3>Your Claim is Waiting</h3>
+                <p>Complete your verification now to keep your claim moving toward compensation!</p>
+            </div>
+            
+            <div style="text-align: center;">
+                <a href="{{portalLink}}" class="cta-button">Verify My Identity</a>
+            </div>
+            
+            <div class="main-text">
+                Need help with the verification process? Simply reply to this email, and our support team will guide you through it.
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Resolve My Claim</strong></p>
+            <p>We're here to help you reclaim what's rightfully yours.</p>
+        </div>
+    </div>
+</body>
+</html>

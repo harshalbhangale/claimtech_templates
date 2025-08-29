@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{firstName}}, Your Claim is Progressing Well! 📈</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .content {
+            padding: 30px 25px;
+        }
+        .greeting {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        .main-text {
+            font-size: 16px;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+        .progress-box {
+            background-color: #e8f5e8;
+            border-left: 4px solid #4caf50;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .progress-box h3 {
+            color: #2e7d32;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .progress-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+        .progress-icon {
+            color: #4caf50;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 16px;
+            width: 20px;
+        }
+        .progress-text {
+            flex: 1;
+            line-height: 1.5;
+        }
+        .timeline-box {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        .timeline-box h3 {
+            color: #667eea;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .timeline-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .timeline-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .timeline-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 12px;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .timeline-content {
+            flex: 1;
+        }
+        .timeline-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .timeline-desc {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            text-align: center;
+        }
+        .highlight-box h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+        }
+        .highlight-box p {
+            margin: 0;
+            font-size: 16px;
+        }
+        .stats-container {
+            display: flex;
+            gap: 15px;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+        .stat-box {
+            flex: 1;
+            min-width: 150px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #e0e0e0;
+        }
+        .stat-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 20px 0;
+            transition: transform 0.2s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .header {
+                padding: 20px 15px;
+            }
+            .header h1 {
+                font-size: 20px;
+            }
+            .stats-container {
+                flex-direction: column;
+            }
+            .stat-box {
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://cdn.prod.website-files.com/66694ee74c4ff0ae3216508b/672c92d8a682009c4c78c21f_rmc_logo-p-800.png" alt="Resolve My Claim Logo" class="logo">
+            <h1>{{firstName}}, Your Claim is Progressing Well! 📈</h1>
+        </div>
+        
+        <div class="content">
+            <div class="greeting">
+                Hi {{firstName}},
+            </div>
+            
+            <div class="main-text">
+                Great news! It's been 3 days since you started your car finance claim, and we're making excellent progress on your case. Here's what's been happening behind the scenes.
+            </div>
+            
+            <div class="progress-box">
+                <h3>🎯 Recent Progress Updates:</h3>
+                <div class="progress-item">
+                    <span class="progress-icon">✓</span>
+                    <div class="progress-text">Credit file analysis completed successfully</div>
+                </div>
+                <div class="progress-item">
+                    <span class="progress-icon">✓</span>
+                    <div class="progress-text">Initial agreement requests sent to lenders</div>
+                </div>
+                <div class="progress-item">
+                    <span class="progress-icon">🔄</span>
+                    <div class="progress-text">Legal team reviewing your case details</div>
+                </div>
+                <div class="progress-item">
+                    <span class="progress-icon">📋</span>
+                    <div class="progress-text">Documentation being prepared for submission</div>
+                </div>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat-box">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Days Active</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">85%</div>
+                    <div class="stat-label">Progress Made</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">2-4</div>
+                    <div class="stat-label">Weeks Remaining</div>
+                </div>
+            </div>
+            
+            <div class="timeline-box">
+                <h3>📅 What Happens Next:</h3>
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Agreement Collection</div>
+                        <div class="timeline-desc">We'll receive your finance agreements from lenders (1-2 weeks)</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Legal Analysis</div>
+                        <div class="timeline-desc">Our legal experts will analyze your agreements for mis-selling</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Claim Submission</div>
+                        <div class="timeline-desc">We'll submit your claim and negotiate with lenders</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Compensation</div>
+                        <div class="timeline-desc">You receive your compensation (average £2,000-£8,000)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-text">
+                Our team is working diligently to ensure your claim is processed as quickly and efficiently as possible. You don't need to do anything right now - we'll keep you updated as we make progress.
+            </div>
+            
+            <div class="highlight-box">
+                <h3>Questions About Your Claim?</h3>
+                <p>Our support team is available to answer any questions you might have about the process.</p>
+            </div>
+            
+            <div style="text-align: center;">
+                <a href="{{portalLink}}" class="cta-button">View Claim Status</a>
+            </div>
+            
+            <div class="main-text">
+                Thank you for your patience as we work to secure the compensation you deserve. We'll be in touch soon with more updates!
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Resolve My Claim</strong></p>
+            <p>We're here to help you reclaim what's rightfully yours.</p>
+        </div>
+    </div>
+</body>
+</html>
