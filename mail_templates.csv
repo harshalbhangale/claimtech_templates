@@ -112,7 +112,7 @@ This fixed structure ensures clarity for everyone involved.
 
 What We're Doing for You?
 
-At Resolve My Claim, we’re here to take the stress out of the claims process. Here’s how we’re working on your behalf:
+At {{brand}}, we’re here to take the stress out of the claims process. Here’s how we’re working on your behalf:
 
 Managing every aspect of your claim, from filing to negotiation.
 
@@ -125,7 +125,7 @@ You can check the progress of your claim or reach out to us at any time through 
 👉 [Check Your Claim Progress]
 
 Thank you for trusting us to guide you through this process and help you reclaim what’s rightfully your",
-educational_day_16,Thanks for trusting us with your claim!,"Choosing the right team to handle your claim is an important decision, and we want you to know why you’re in good hands with Resolve My Claim. Over the past year, we’ve worked tirelessly to ensure our clients get the best results, and here’s how we’re doing the same for you.
+educational_day_16,Thanks for trusting us with your claim!,"Choosing the right team to handle your claim is an important decision, and we want you to know why you’re in good hands with {{brand}}. Over the past year, we’ve worked tirelessly to ensure our clients get the best results, and here’s how we’re doing the same for you.
 
 What Sets Us Apart?
 
@@ -137,7 +137,7 @@ What Sets Us Apart?
 
 How We’re Supporting You
 
-At Resolve My Claim, we’re here to make this process as seamless as possible. Here’s what we’re doing for you:
+At {{brand}}, we’re here to make this process as seamless as possible. Here’s what we’re doing for you:
 
 - Reviewing every detail of your car finance agreements to uncover any hidden commissions.
 
@@ -151,7 +151,7 @@ You can track how your claim is progressing or reach out to us with any question
 
 👉 [Check Your Claim Progress]
 
-We’re committed to achieving the best outcome for you. Thank you for trusting Resolve My Claim to handle your case with care and expertise.",
+We’re committed to achieving the best outcome for you. Thank you for trusting {{brand}} to handle your case with care and expertise.",
 educational_day_23,Understanding the FCA’s Redress Scheme and How It Helps You,"The Financial Conduct Authority (FCA) is introducing a redress scheme designed to help customers who were impacted by hidden commissions in car finance agreements. This initiative is a step toward fairness and accountability in the motor finance industry, and here’s what it means for you.
 
 What Is a Redress Scheme?
@@ -172,7 +172,7 @@ This redress scheme is about more than just refunds—it’s about holding lende
 
 How We’re Supporting You
 
-At Resolve My Claim, we’re here to ensure you benefit fully from the FCA’s redress scheme. Here’s what we’re doing for you:
+At {{brand}}, we’re here to ensure you benefit fully from the FCA’s redress scheme. Here’s what we’re doing for you:
 
 - Reviewing your agreements thoroughly to identify hidden commissions.
 
@@ -541,7 +541,7 @@ We’ll keep you informed every step of the way, and if you have any questions, 
 [Track My Claims].
 
 Best regards,
-Resolve My Claim","Hi {{firstName}},
+{{brand}}","Hi {{firstName}},
 
 Great news—your claim is now in progress! 🚀 
 
@@ -554,10 +554,10 @@ Now that your claim is in progress, we’d love to hear your feedback! Reviews f
 
 📝 Leave us a quick review here: [Review Link]
 
-Thank you for trusting Resolve My Claim. If you have any questions, feel free to reply to this email!
+Thank you for trusting {{brand}}. If you have any questions, feel free to reply to this email!
 
 Best regards,
-Resolve My Claim","Hi {{firstName}},
+{{brand}}","Hi {{firstName}},
 
 We’d love to hear about your experience! ⭐ 
 
@@ -575,7 +575,7 @@ Refer them to us and we'll give you a £20 Amazon voucher for each successful cl
 You can send it to as many people as you like. 
 
 Best regards,
-Resolve My Claim
+{{brand}}
 ","Hi {{firstName}},
 
 Do you know other people who have had a car on finance since 2007? 
@@ -598,7 +598,7 @@ We’re making good progress on your car finance claim, but your lender has come
 If you have any questions or need help, just reply to this email — we’re here for you!
 
 Best regards,
-Resolve My Claim","Hi {{firstName}}, 
+{{brand}}","Hi {{firstName}}, 
 
 {{lender}} needs more info to move forward with your claim. 
 
@@ -619,7 +619,7 @@ Need help? Just reply — we’re here for you.
 
 
 Best regards,
-Resolve My Claim","Hi {{firstName}},
+{{brand}}","Hi {{firstName}},
 
 {{lender}} still needs more info to process your claim. ⏰
 
