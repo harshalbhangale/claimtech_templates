@@ -6,64 +6,54 @@
     <title>🚗 Start Your Claim with One Simple Step</title>
     <style>
         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            line-height: 1.6;
+            background-color: #FFFFFF;
+            color: #333;
         }
         .container {
             max-width: 600px;
             margin: 0 auto;
-            background-color: #FFFFFF;
-            border-radius: 8px;
-            overflow: hidden;
+            background-color: #ffffff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .header {
-            background-color: #F8F8F8;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 2px solid #5B34C8;
-        }
+             text-align: center;
+             padding: 40px 20px;
+             background-color: #F8F8F8;
+             border-bottom: 3px solid #e9ecef;
+         }
         .logo {
-            max-width: 150px;
+            max-width: 200px;
             height: auto;
         }
         .content {
-            padding: 30px;
+            padding: 40px 30px;
         }
         .title {
             color: #2c3e50;
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
             margin-bottom: 20px;
             text-align: center;
         }
         .section {
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
         .section h3 {
-            color: #5B34C8;
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-        .section p {
-            color: #555;
+            color: #34495e;
+            font-size: 20px;
             margin-bottom: 15px;
-        }
-        .section ul {
-            color: #555;
-            padding-left: 20px;
-        }
-        .section li {
-            margin-bottom: 8px;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
         }
         .highlight-box {
             background-color: #B8FF8D;
             color: #2c3e50;
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 10px;
             margin: 20px 0;
             text-align: center;
             border: 2px solid #5B34C8;
@@ -74,69 +64,72 @@
             color: white;
             padding: 15px 30px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 50px;
             font-weight: bold;
+            font-size: 16px;
             margin: 20px 0;
-            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 15px rgba(91, 52, 200, 0.4);
+            transition: all 0.3s ease;
         }
         .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(91, 52, 200, 0.6);
             background-color: #4A2BA3;
         }
         .footer {
-            background-color: #F8F8F8;
-            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
             text-align: center;
-            color: #666;
-            font-size: 12px;
+            padding: 20px;
+            font-size: 14px;
         }
-        @media (max-width: 600px) {
-            .container {
-                margin: 10px;
-                border-radius: 0;
-            }
-            .content {
-                padding: 20px;
-            }
-            .title {
-                font-size: 20px;
-            }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .stats {
+            background-color: #e8f4fd;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <img src="https://cdn.prod.website-files.com/66694ee74c4ff0ae3216508b/672c92d8a682009c4c78c21f_rmc_logo-p-800.png" alt="{{brand}} Logo" class="logo">
+            <img src="{{brand_logo}}" alt="{{brand}} Logo" class="logo">
         </div>
         
         <div class="content">
             <h1 class="title">🚗 Start Your Claim with One Simple Step</h1>
             
-            <div class="section">
-                <p>Hi {{firstName}},</p>
-                <p>Thank you for starting your car finance claim with us! To move forward, we just need your ✍️ signature—this allows us to take the next steps for you.</p>
+            <div class="greeting">
+                Hi {{firstName}},
+            </div>
+            <div class="main-text">
+                Thank you for starting your car finance claim with us! To move forward, we just need your ✍️ signature—this allows us to take the next steps for you.
+                <br><br>
+                Why is your signature important?
+                <br><br>
+                ✅ It authorizes us to act on your behalf and start your claim legally.
+                <br><br>
+                🔍 Once signed, we'll run our Agreement Locator. This quick, secure process uses a SOFT credit check to find your lenders and agreement numbers. It only takes 30 seconds and ensures we can register your claim as soon as possible.
+                <br><br>
+                Click the link below to sign and let us handle the rest:
             </div>
             
-            <div class="section">
-                <h3>Why is your signature important?</h3>
-                <ul>
-                    <li>✅ It authorizes us to act on your behalf and start your claim legally.</li>
-                    <li>🔍 Once signed, we'll run our Agreement Locator. This quick, secure process uses a SOFT credit check to find your lenders and agreement numbers. It only takes 30 seconds and ensures we can register your claim as soon as possible.</li>
-                </ul>
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="{{portalLink}}" class="cta-button">Complete My Claim</a>
             </div>
             
-            <div class="highlight-box">
-                <h3 style="color: #2c3e50;">Ready to Get Started?</h3>
-                <p>Click the link below to sign and let us handle the rest:</p>
-            </div>
-            
-            <div style="text-align: center;">
-                <a href="#" class="cta-button">Complete My Claim</a>
-            </div>
-            
-            <div class="section">
-                <p>💬 Have questions or need help? Simply reply to this email, and our team will be happy to assist you.</p>
-                <p>Let's get your claim moving today! 🚀</p>
+            <div class="main-text">
+                💬 Have questions or need help? Simply reply to this email, and our team will be happy to assist you.
+                <br><br>
+                Let's get your claim moving today! 🚀
             </div>
         </div>
     </div>

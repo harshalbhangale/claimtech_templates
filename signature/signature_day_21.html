@@ -22,33 +22,36 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px 20px;
+            background-color: #F8F8F8;
+            padding: 20px;
             text-align: center;
+            border-bottom: 2px solid #5B34C8;
         }
         .logo {
-            width: 120px;
+            max-width: 150px;
             height: auto;
-            margin-bottom: 15px;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
-            font-weight: 600;
         }
         .content {
-            padding: 30px 25px;
+            padding: 30px;
         }
-        .greeting {
-            font-size: 18px;
-            margin-bottom: 20px;
+        .title {
             color: #2c3e50;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
         }
-        .main-text {
-            font-size: 16px;
+        .section {
             margin-bottom: 25px;
-            line-height: 1.7;
+        }
+        .section h3 {
+            color: #5B34C8;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .section p {
+            color: #555;
+            margin-bottom: 15px;
         }
         .process-steps {
             background-color: #f8f9fa;
@@ -56,89 +59,53 @@
             padding: 20px;
             margin: 25px 0;
         }
-        .process-steps h3 {
-            color: #667eea;
-            margin-top: 0;
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
         .step {
             display: flex;
             align-items: flex-start;
             margin-bottom: 12px;
             font-size: 15px;
+            color: #555;
         }
-        .step-number {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 50%;
-            width: 24px;
-            height: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 12px;
-            margin-right: 12px;
-            flex-shrink: 0;
+        .step-emoji {
+            margin-right: 10px;
+            font-size: 18px;
         }
         .step-text {
             flex: 1;
             line-height: 1.5;
         }
         .highlight-box {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-            color: white;
+            background-color: #B8FF8D;
+            color: #2c3e50;
             padding: 20px;
             border-radius: 8px;
-            margin: 25px 0;
+            margin: 20px 0;
             text-align: center;
-        }
-        .highlight-box h3 {
-            margin: 0 0 10px 0;
-            font-size: 18px;
-        }
-        .highlight-box p {
-            margin: 0;
-            font-size: 16px;
+            border: 2px solid #5B34C8;
         }
         .cta-button {
             display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-color: #5B34C8;
             color: white;
             padding: 15px 30px;
             text-decoration: none;
-            border-radius: 25px;
-            font-weight: 600;
-            font-size: 16px;
+            border-radius: 5px;
+            font-weight: bold;
             margin: 20px 0;
-            transition: transform 0.2s ease;
+            transition: background-color 0.3s ease;
         }
         .cta-button:hover {
-            transform: translateY(-2px);
-        }
-        .footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 14px;
-        }
-        .footer p {
-            margin: 5px 0;
+            background-color: #4A2BA3;
         }
         @media (max-width: 600px) {
             .container {
-                margin: 0;
+                margin: 10px;
                 border-radius: 0;
             }
             .content {
-                padding: 20px 15px;
+                padding: 20px;
             }
-            .header {
-                padding: 20px 15px;
-            }
-            .header h1 {
+            .title {
                 font-size: 20px;
             }
         }
@@ -147,66 +114,52 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="https://cdn.prod.website-files.com/66694ee74c4ff0ae3216508b/672c92d8a682009c4c78c21f_rmc_logo-p-800.png" alt="{{brand}} Logo" class="logo">
-            <h1>{{firstName}}, Here's Exactly How Your Car Finance Claim Works 💡</h1>
+            <img src="{{brand_logo}}" alt="{{brand}} Logo" class="logo">
         </div>
         
         <div class="content">
-            <div class="greeting">
-                Hi {{firstName}},
-            </div>
+            <h1 class="title">{{firstName}}, Here's Exactly How Your Car Finance Claim Works 💡</h1>
             
-            <div class="main-text">
-                We often get asked to explain how the car finance claim process works, so here's a quick breakdown for you:
+            <div class="section">
+                <p>Hi {{firstName}},</p>
+                <p>We often get asked to explain how the car finance claim process works, so here's a quick breakdown for you:</p>
             </div>
             
             <div class="process-steps">
-                <h3>Your Claim Process:</h3>
                 <div class="step">
-                    <div class="step-number">1</div>
+                    <div class="step-emoji">1️⃣</div>
                     <div class="step-text">We run a quick credit check (this doesn't affect your credit score!)</div>
                 </div>
                 <div class="step">
-                    <div class="step-number">2</div>
+                    <div class="step-emoji">2️⃣</div>
                     <div class="step-text">We request agreements and statements directly from your lender to save you the hassle.</div>
                 </div>
                 <div class="step">
-                    <div class="step-number">3</div>
+                    <div class="step-emoji">3️⃣</div>
                     <div class="step-text">We verify your claim to make sure everything is in order.</div>
                 </div>
                 <div class="step">
-                    <div class="step-number">4</div>
+                    <div class="step-emoji">4️⃣</div>
                     <div class="step-text">Your claim is submitted to the lender.</div>
                 </div>
                 <div class="step">
-                    <div class="step-number">5</div>
+                    <div class="step-emoji">5️⃣</div>
                     <div class="step-text">You receive your refund! 💸</div>
                 </div>
             </div>
             
-            <div class="highlight-box">
-                <h3>You're Almost There!</h3>
-                <p>Just one final step to get your claim moving forward.</p>
-            </div>
-            
-            <div class="main-text">
-                You're almost there—just one final step! ✍️ Sign here so we can get started:
+            <div class="section">
+                <p>You're almost there—just one final step! ✍️ Sign here so we can get started:</p>
             </div>
             
             <div style="text-align: center;">
                 <a href="{{portalLink}}" class="cta-button">Complete My Signature</a>
             </div>
             
-            <div class="main-text">
-                Have any questions? Reply to this email, and we'll be happy to guide you.
+            <div class="section">
+                <p>Have any questions? Reply to this email, and we'll be happy to guide you.</p>
             </div>
         </div>
     </div>
-</body>
-</html><!-- Email template: signature_day_21 -->
-    <!-- Subject: {{firstName}}, Here's Exactly How Your Car Finance Claim Works 💡 -->
-    
-    <!-- Email content will be populated here -->
-    
 </body>
 </html>

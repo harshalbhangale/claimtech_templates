@@ -8,7 +8,7 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f4f4;
             line-height: 1.6;
         }
@@ -82,13 +82,6 @@
         .cta-button:hover {
             background-color: #4A2BA3;
         }
-        .footer {
-            background-color: #F8F8F8;
-            padding: 20px;
-            text-align: center;
-            color: #666;
-            font-size: 12px;
-        }
         @media (max-width: 600px) {
             .container {
                 margin: 10px;
@@ -106,7 +99,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="https://cdn.prod.website-files.com/66694ee74c4ff0ae3216508b/672c92d8a682009c4c78c21f_rmc_logo-p-800.png" alt="{{brand}} Logo" class="logo">
+            <img src="{{brand_logo}}" alt="{{brand}} Logo" class="logo">
         </div>
         
         <div class="content">
@@ -143,7 +136,7 @@
             </div>
             
             <div style="text-align: center;">
-                <a href="#" class="cta-button">Sign My Agreement</a>
+                <a href="{{portalLink}}" class="cta-button">Sign My Agreement</a>
             </div>
             
             <div class="section">

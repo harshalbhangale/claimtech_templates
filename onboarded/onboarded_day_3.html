@@ -3,199 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{firstName}}, Your Claim is Progressing Well! 📈</title>
+    <title>Get £20 for referring a friend</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: #FFFFFF;
             color: #333;
         }
         .container {
             max-width: 600px;
             margin: 0 auto;
             background-color: #ffffff;
-            border-radius: 8px;
-            overflow: hidden;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-        }
+             text-align: center;
+             padding: 40px 20px;
+             background-color: #F8F8F8;
+             border-bottom: 3px solid #e9ecef;
+         }
         .logo {
-            width: 120px;
+            max-width: 200px;
             height: auto;
-            margin-bottom: 15px;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
-            font-weight: 600;
         }
         .content {
-            padding: 30px 25px;
+            padding: 40px 30px;
         }
-        .greeting {
-            font-size: 18px;
-            margin-bottom: 20px;
+        .title {
             color: #2c3e50;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
         }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h3 {
+             color: #34495e;
+             font-size: 20px;
+             margin-bottom: 15px;
+             border-left: 4px solid #667eea;
+             padding-left: 15px;
+         }
         .main-text {
             font-size: 16px;
             margin-bottom: 25px;
             line-height: 1.7;
         }
-        .progress-box {
-            background-color: #e8f5e8;
-            border-left: 4px solid #4caf50;
-            padding: 20px;
+        .referral-box {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 25px;
             margin: 25px 0;
             border-radius: 0 8px 8px 0;
         }
-        .progress-box h3 {
-            color: #2e7d32;
+        .referral-box h3 {
+            color: #ff8f00;
             margin-top: 0;
             margin-bottom: 15px;
-            font-size: 18px;
+            font-size: 20px;
         }
-        .progress-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 12px;
-            font-size: 15px;
+        .voucher-image {
+            display: block;
+            max-width: 120px;
+            margin: 20px auto;
         }
-        .progress-icon {
-            color: #4caf50;
-            font-weight: bold;
-            margin-right: 10px;
-            font-size: 16px;
-            width: 20px;
-        }
-        .progress-text {
-            flex: 1;
-            line-height: 1.5;
-        }
-        .timeline-box {
-            background-color: #f8f9fa;
-            border-radius: 8px;
-            padding: 20px;
+        .referral-steps {
             margin: 25px 0;
         }
-        .timeline-box h3 {
-            color: #667eea;
-            margin-top: 0;
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-        .timeline-item {
+        .step-item {
             display: flex;
             align-items: flex-start;
             margin-bottom: 15px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #e0e0e0;
         }
-        .timeline-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-        .timeline-number {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        .step-number {
+            background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
             color: white;
-            width: 25px;
-            height: 25px;
+            width: 28px;
+            height: 28px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            font-size: 12px;
+            font-size: 14px;
             margin-right: 15px;
             flex-shrink: 0;
         }
-        .timeline-content {
+        .step-content {
             flex: 1;
         }
-        .timeline-title {
+        .step-title {
             font-weight: 600;
             color: #2c3e50;
             margin-bottom: 5px;
         }
-        .timeline-desc {
-            color: #666;
-            font-size: 14px;
-            line-height: 1.4;
-        }
         .highlight-box {
-            background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
-            color: white;
+            background-color: #e3f2fd;
+            color: #2c3e50;
             padding: 20px;
-            border-radius: 8px;
-            margin: 25px 0;
+            border-radius: 10px;
+            margin: 20px 0;
             text-align: center;
-        }
-        .highlight-box h3 {
-            margin: 0 0 10px 0;
-            font-size: 18px;
-        }
-        .highlight-box p {
-            margin: 0;
-            font-size: 16px;
-        }
-        .stats-container {
-            display: flex;
-            gap: 15px;
-            margin: 25px 0;
-            flex-wrap: wrap;
-        }
-        .stat-box {
-            flex: 1;
-            min-width: 150px;
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            border: 2px solid #e0e0e0;
-        }
-        .stat-number {
-            font-size: 24px;
-            font-weight: bold;
-            color: #667eea;
-            margin-bottom: 5px;
-        }
-        .stat-label {
-            font-size: 14px;
-            color: #666;
+            border-left: 4px solid #2196f3;
         }
         .cta-button {
             display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-color: #5B34C8;
             color: white;
             padding: 15px 30px;
             text-decoration: none;
-            border-radius: 25px;
-            font-weight: 600;
+            border-radius: 50px;
+            font-weight: bold;
             font-size: 16px;
             margin: 20px 0;
-            transition: transform 0.2s ease;
+            box-shadow: 0 4px 15px rgba(91, 52, 200, 0.4);
+            transition: all 0.3s ease;
         }
         .cta-button:hover {
             transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(91, 52, 200, 0.6);
+            background-color: #4A2BA3;
         }
         .footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
+            background-color: #f8f8f8;
+            color: #666;
             text-align: center;
+            padding: 20px;
             font-size: 14px;
-        }
-        .footer p {
-            margin: 5px 0;
+            border-top: 1px solid #e9ecef;
         }
         @media (max-width: 600px) {
             .container {
@@ -211,114 +151,44 @@
             .header h1 {
                 font-size: 20px;
             }
-            .stats-container {
-                flex-direction: column;
-            }
-            .stat-box {
-                min-width: auto;
-            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <img src="https://cdn.prod.website-files.com/66694ee74c4ff0ae3216508b/672c92d8a682009c4c78c21f_rmc_logo-p-800.png" alt="{{brand}} Logo" class="logo">
-            <h1>{{firstName}}, Your Claim is Progressing Well! 📈</h1>
+            <img src="{{brand_logo}}" alt="{{brand}} Logo" class="logo">
         </div>
         
         <div class="content">
-            <div class="greeting">
-                Hi {{firstName}},
+            <h1 class="title">Get £20 for referring a friend</h1>
+            
+            <p>Dear {{firstName}},</p>
+            
+            <p>Do you know other people who have had a car on finance since 2007?</p>
+            
+            <p>Refer them to us and we'll give you a £20 Amazon voucher for each successful claim!</p>
+            
+            <div class="referral-box">
+                <h3>🔗 Here's your unique link:</h3>
+                
+                <div class="highlight-box">
+                    <p><strong>{{referralLink}}</strong></p>
+                </div>
+                
+                <p>You can send it to as many people as you like.</p>
             </div>
             
-            <div class="main-text">
-                Great news! It's been 3 days since you started your car finance claim, and we're making excellent progress on your case. Here's what's been happening behind the scenes.
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="{{referralLink}}" class="cta-button">Share Your Referral Link</a>
             </div>
             
-            <div class="progress-box">
-                <h3>🎯 Recent Progress Updates:</h3>
-                <div class="progress-item">
-                    <span class="progress-icon">✓</span>
-                    <div class="progress-text">Credit file analysis completed successfully</div>
-                </div>
-                <div class="progress-item">
-                    <span class="progress-icon">✓</span>
-                    <div class="progress-text">Initial agreement requests sent to lenders</div>
-                </div>
-                <div class="progress-item">
-                    <span class="progress-icon">🔄</span>
-                    <div class="progress-text">Legal team reviewing your case details</div>
-                </div>
-                <div class="progress-item">
-                    <span class="progress-icon">📋</span>
-                    <div class="progress-text">Documentation being prepared for submission</div>
-                </div>
-            </div>
-            
-            <div class="stats-container">
-                <div class="stat-box">
-                    <div class="stat-number">3</div>
-                    <div class="stat-label">Days Active</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">85%</div>
-                    <div class="stat-label">Progress Made</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">2-4</div>
-                    <div class="stat-label">Weeks Remaining</div>
-                </div>
-            </div>
-            
-            <div class="timeline-box">
-                <h3>📅 What Happens Next:</h3>
-                <div class="timeline-item">
-                    <div class="timeline-number">1</div>
-                    <div class="timeline-content">
-                        <div class="timeline-title">Agreement Collection</div>
-                        <div class="timeline-desc">We'll receive your finance agreements from lenders (1-2 weeks)</div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-number">2</div>
-                    <div class="timeline-content">
-                        <div class="timeline-title">Legal Analysis</div>
-                        <div class="timeline-desc">Our legal experts will analyze your agreements for mis-selling</div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-number">3</div>
-                    <div class="timeline-content">
-                        <div class="timeline-title">Claim Submission</div>
-                        <div class="timeline-desc">We'll submit your claim and negotiate with lenders</div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-number">4</div>
-                    <div class="timeline-content">
-                        <div class="timeline-title">Compensation</div>
-                        <div class="timeline-desc">You receive your compensation (average £2,000-£8,000)</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="main-text">
-                Our team is working diligently to ensure your claim is processed as quickly and efficiently as possible. You don't need to do anything right now - we'll keep you updated as we make progress.
-            </div>
-            
-            <div class="highlight-box">
-                <h3>Questions About Your Claim?</h3>
-                <p>Our support team is available to answer any questions you might have about the process.</p>
-            </div>
-            
-            <div style="text-align: center;">
-                <a href="{{portalLink}}" class="cta-button">View Claim Status</a>
-            </div>
-            
-            <div class="main-text">
-                Thank you for your patience as we work to secure the compensation you deserve. We'll be in touch soon with more updates!
-            </div>
+            <p>Best regards,<br>
+            {{brand}}</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2023 {{brand}}. All rights reserved.</p>
         </div>
     </div>
 </body>

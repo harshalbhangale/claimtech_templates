@@ -8,7 +8,7 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f4f4;
             line-height: 1.6;
         }
@@ -106,7 +106,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="https://cdn.prod.website-files.com/66694ee74c4ff0ae3216508b/672c92d8a682009c4c78c21f_rmc_logo-p-800.png" alt="{{brand}} Logo" class="logo">
+            <img src="{{brand_logo}}" alt="{{brand}} Logo" class="logo">
         </div>
         
         <div class="content">
@@ -114,31 +114,16 @@
             
             <div class="section">
                 <p>Hi {{firstName}},</p>
-                <p>It's been a week since you started your claim, and we're still waiting for your signature. Your potential compensation is just one signature away!</p>
-            </div>
-            
-            <div class="section">
-                <h3>What you're missing out on:</h3>
-                <ul>
-                    <li>💰 Average compensation of £2,148 for affected customers</li>
-                    <li>⚡ Fast-track processing once signed</li>
-                    <li>🛡️ Professional representation against lenders</li>
-                    <li>📞 Dedicated support throughout the process</li>
-                </ul>
+                <p>Each claim you make could be worth £1000s and we locate all your agreements in under 20 seconds!</p>
             </div>
             
             <div class="highlight-box">
-                <h3 style="color: #2c3e50;">Don't Let This Slip Away</h3>
-                <p>Every day you wait is another day without progress on your claim. Let's get this moving today!</p>
+                <h3 style="color: #2c3e50;">Don't Miss Out On Your Compensation</h3>
+                <p>Your claim is just waiting for you to complete it!</p>
             </div>
             
             <div style="text-align: center;">
-                <a href="#" class="cta-button">Sign Now - Let's Go!</a>
-            </div>
-            
-            <div class="section">
-                <p>🤝 We're here to help every step of the way. Reply to this email if you need any assistance.</p>
-                <p>Your claim is waiting - let's make it happen! 🚀</p>
+                <a href="{{portalLink}}" class="cta-button">Finish your claim here 👇</a>
             </div>
         </div>
     </div>

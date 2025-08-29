@@ -10,202 +10,134 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: #FFFFFF;
             color: #333;
         }
         .container {
             max-width: 600px;
             margin: 0 auto;
             background-color: #ffffff;
-            border-radius: 8px;
-            overflow: hidden;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px 20px;
             text-align: center;
+            padding: 40px 20px;
+            background-color: #F8F8F8;
+            border-bottom: 3px solid #e9ecef;
         }
         .logo {
-            width: 120px;
+            max-width: 200px;
             height: auto;
-            margin-bottom: 15px;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
-            font-weight: 600;
         }
         .content {
-            padding: 30px 25px;
+            padding: 40px 30px;
         }
-        .greeting {
-            font-size: 18px;
-            margin-bottom: 20px;
+        .title {
             color: #2c3e50;
-        }
-        .main-text {
-            font-size: 16px;
-            margin-bottom: 25px;
-            line-height: 1.7;
-        }
-        .urgency-box {
-            background-color: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 20px;
-            margin: 25px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        .urgency-box h3 {
-            color: #856404;
-            margin-top: 0;
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-        .urgency-box p {
-            color: #856404;
-            margin: 0;
-            font-size: 15px;
-        }
-        .info-box {
-            background-color: #f8f9fa;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 25px 0;
-        }
-        .info-box h3 {
-            color: #667eea;
-            margin-top: 0;
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-        .info-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 12px;
-            font-size: 15px;
-        }
-        .info-icon {
-            color: #28a745;
+            font-size: 28px;
             font-weight: bold;
-            margin-right: 10px;
-            font-size: 16px;
-        }
-        .info-text {
-            flex: 1;
-            line-height: 1.5;
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-            color: white;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 25px 0;
+            margin-bottom: 20px;
             text-align: center;
         }
-        .highlight-box h3 {
-            margin: 0 0 10px 0;
-            font-size: 18px;
+        .section {
+            margin-bottom: 30px;
         }
-        .highlight-box p {
-            margin: 0;
-            font-size: 16px;
+        .section h3 {
+            color: #34495e;
+            font-size: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+        .highlight-box {
+            background-color: #B8FF8D;
+            color: #2c3e50;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+            border: 2px solid #5B34C8;
         }
         .cta-button {
             display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-color: #5B34C8;
             color: white;
             padding: 15px 30px;
             text-decoration: none;
-            border-radius: 25px;
-            font-weight: 600;
+            border-radius: 50px;
+            font-weight: bold;
             font-size: 16px;
             margin: 20px 0;
-            transition: transform 0.2s ease;
+            box-shadow: 0 4px 15px rgba(91, 52, 200, 0.4);
+            transition: all 0.3s ease;
         }
         .cta-button:hover {
             transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(91, 52, 200, 0.6);
+            background-color: #4A2BA3;
         }
         .footer {
             background-color: #2c3e50;
             color: white;
-            padding: 20px;
             text-align: center;
+            padding: 20px;
             font-size: 14px;
         }
-        .footer p {
-            margin: 5px 0;
+        ul {
+            padding-left: 20px;
         }
-        @media (max-width: 600px) {
-            .container {
-                margin: 0;
-                border-radius: 0;
-            }
-            .content {
-                padding: 20px 15px;
-            }
-            .header {
-                padding: 20px 15px;
-            }
-            .header h1 {
-                font-size: 20px;
-            }
+        li {
+            margin-bottom: 8px;
+        }
+        .stats {
+            background-color: #e8f4fd;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .greeting {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .main-text {
+            margin-bottom: 20px;
+            line-height: 1.8;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Header with Logo -->
         <div class="header">
-            <img src="https://cdn.prod.website-files.com/66694ee74c4ff0ae3216508b/672c92d8a682009c4c78c21f_rmc_logo-p-800.png" alt="{{brand}} Logo" class="logo">
-            <h1>{{firstName}}, Don't Let Your Claim Wait ⏳</h1>
+            <img src="{{brand_logo}}" alt="{{brand}} Logo" class="logo">
         </div>
         
+        <!-- Main Content -->
         <div class="content">
+            <h1 class="title">{{firstName}}, Don't Let Your Claim Wait ⏳</h1>
+            
             <div class="greeting">
                 Hi {{firstName}},
             </div>
-            
             <div class="main-text">
-                It's been 3 days since we requested your ID verification, and your car finance claim is still waiting to move forward. We don't want you to miss out on your potential compensation.
+                We're excited to help you with your car finance claim, but we can't move forward without your 📸 Photo ID.
+                <br><br>
+                Did you know?
+                <br><br>
+                ✅ Your Photo ID allows us to securely request your finance documents from lenders if needed.
+                <br><br>
+                🔒 It also ensures your ID is verified for secure claim processing.
+                <br><br>
+                Upload your Photo ID here to continue:
             </div>
             
-            <div class="urgency-box">
-                <h3>⚠️ Action Required</h3>
-                <p>Your claim cannot proceed without ID verification. This is a legal requirement for all financial claims.</p>
-            </div>
-            
-            <div class="info-box">
-                <h3>Quick Verification Process:</h3>
-                <div class="info-item">
-                    <span class="info-icon">📱</span>
-                    <div class="info-text">Takes just 2 minutes on your phone or computer</div>
-                </div>
-                <div class="info-item">
-                    <span class="info-icon">🔒</span>
-                    <div class="info-text">Bank-level security protects your information</div>
-                </div>
-                <div class="info-item">
-                    <span class="info-icon">✅</span>
-                    <div class="info-text">Instant approval in most cases</div>
-                </div>
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="{{portalLink}}" class="cta-button">Complete My Claim</a>
             </div>
             
             <div class="main-text">
-                Thousands of customers have already completed their verification and are moving forward with their claims. Don't let yours fall behind.
-            </div>
-            
-            <div class="highlight-box">
-                <h3>Time is Running Out</h3>
-                <p>Complete your verification now to keep your claim active and moving toward compensation!</p>
-            </div>
-            
-            <div style="text-align: center;">
-                <a href="{{portalLink}}" class="cta-button">Complete Verification Now</a>
-            </div>
-            
-            <div class="main-text">
-                Still having trouble? Reply to this email, and our team will personally assist you with the verification process.
+                💬 Have questions? Just reply to this email!
             </div>
         </div>
     </div>

@@ -10,143 +10,127 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: #FFFFFF;
             color: #333;
         }
         .container {
             max-width: 600px;
             margin: 0 auto;
             background-color: #ffffff;
-            border-radius: 8px;
-            overflow: hidden;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-        }
+             text-align: center;
+             padding: 40px 20px;
+             background-color: #F8F8F8;
+             border-bottom: 3px solid #e9ecef;
+         }
         .logo {
-            width: 120px;
+            max-width: 200px;
             height: auto;
-            margin-bottom: 15px;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
-            font-weight: 600;
         }
         .content {
-            padding: 30px 25px;
+            padding: 40px 30px;
         }
-        .greeting {
-            font-size: 18px;
-            margin-bottom: 20px;
+        .title {
             color: #2c3e50;
-        }
-        .main-text {
-            font-size: 16px;
-            margin-bottom: 25px;
-            line-height: 1.7;
-        }
-        .success-box {
-            background-color: #e8f5e8;
-            border-left: 4px solid #4caf50;
-            padding: 20px;
-            margin: 25px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        .success-box h3 {
-            color: #2e7d32;
-            margin-top: 0;
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-        .success-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 12px;
-            font-size: 15px;
-        }
-        .success-icon {
-            color: #4caf50;
+            font-size: 28px;
             font-weight: bold;
-            margin-right: 12px;
-            font-size: 18px;
+            margin-bottom: 20px;
+            text-align: center;
         }
-        .success-text {
-            flex: 1;
-            line-height: 1.5;
+        .section {
+            margin-bottom: 30px;
         }
-        .info-box {
+        .section h3 {
+            color: #34495e;
+            font-size: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+        .steps-container {
             background-color: #f8f9fa;
             border-radius: 8px;
             padding: 20px;
             margin: 25px 0;
         }
-        .info-box h3 {
-            color: #667eea;
-            margin-top: 0;
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-        .info-item {
+        .step-item {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 12px;
-            font-size: 15px;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
         }
-        .info-icon {
-            color: #28a745;
+        .step-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .step-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-weight: bold;
-            margin-right: 10px;
-            font-size: 16px;
+            font-size: 14px;
+            margin-right: 15px;
+            flex-shrink: 0;
         }
-        .info-text {
+        .step-content {
             flex: 1;
-            line-height: 1.5;
+        }
+        .step-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .step-desc {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.4;
         }
         .highlight-box {
-            background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
-            color: white;
+            background-color: #e8f5e9;
+            color: #2c3e50;
             padding: 20px;
-            border-radius: 8px;
-            margin: 25px 0;
-            text-align: center;
-        }
-        .highlight-box h3 {
-            margin: 0 0 10px 0;
-            font-size: 18px;
-        }
-        .highlight-box p {
-            margin: 0;
-            font-size: 16px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #4caf50;
         }
         .cta-button {
             display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-color: #5B34C8;
             color: white;
             padding: 15px 30px;
             text-decoration: none;
-            border-radius: 25px;
-            font-weight: 600;
+            border-radius: 50px;
+            font-weight: bold;
             font-size: 16px;
             margin: 20px 0;
-            transition: transform 0.2s ease;
+            box-shadow: 0 4px 15px rgba(91, 52, 200, 0.4);
+            transition: all 0.3s ease;
         }
         .cta-button:hover {
             transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(91, 52, 200, 0.6);
+            background-color: #4A2BA3;
         }
         .footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
+            background-color: #f8f8f8;
+            color: #666;
             text-align: center;
+            padding: 20px;
             font-size: 14px;
+            border-top: 1px solid #e9ecef;
         }
-        .footer p {
-            margin: 5px 0;
+        .info-link {
+            color: #5B34C8;
+            text-decoration: underline;
         }
         @media (max-width: 600px) {
             .container {
@@ -168,75 +152,56 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="https://cdn.prod.website-files.com/66694ee74c4ff0ae3216508b/672c92d8a682009c4c78c21f_rmc_logo-p-800.png" alt="{{brand}} Logo" class="logo">
-            <h1>Your Car Finance Claim is Now in Progress 🚀</h1>
+            <img src="{{brand_logo}}" alt="{{brand}} Logo" class="logo">
         </div>
         
         <div class="content">
-            <div class="greeting">
-                Congratulations!
-            </div>
+            <h1 class="title">Your Car Finance Claim is Now in Progress 🚀</h1>
             
-            <div class="main-text">
-                Your car finance claim has been successfully submitted and is now officially in progress. Our expert team is already working on your case to secure the compensation you deserve.
-            </div>
+            <p>Dear {{firstName}},</p>
             
-            <div class="success-box">
-                <h3>✅ What We've Completed:</h3>
-                <div class="success-item">
-                    <span class="success-icon">✓</span>
-                    <div class="success-text">Your claim has been registered in our system</div>
-                </div>
-                <div class="success-item">
-                    <span class="success-icon">✓</span>
-                    <div class="success-text">Initial eligibility assessment completed</div>
-                </div>
-                <div class="success-item">
-                    <span class="success-icon">✓</span>
-                    <div class="success-text">Case assigned to our legal experts</div>
-                </div>
-                <div class="success-item">
-                    <span class="success-icon">✓</span>
-                    <div class="success-text">Investigation process initiated</div>
-                </div>
-            </div>
+            <p>Great news! You've successfully completed your onboarding, and we've now officially started working on your car finance claim.</p>
             
-            <div class="info-box">
-                <h3>🔍 What Happens Next:</h3>
-                <div class="info-item">
-                    <span class="info-icon">📋</span>
-                    <div class="info-text">We'll conduct comprehensive credit checks to identify all your finance agreements</div>
+            <div class="steps-container">
+                <h3>Here's what happens next:</h3>
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <div class="step-title">We have requested your agreements and statements from your lender.</div>
+                    </div>
                 </div>
-                <div class="info-item">
-                    <span class="info-icon">📄</span>
-                    <div class="info-text">Request copies of your original agreements from lenders</div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <div class="step-title">Once received, our team will review them for any Hidden Commissions (HC) or Discretionary Commission Arrangements (DCA) that could mean you were overcharged.</div>
+                    </div>
                 </div>
-                <div class="info-item">
-                    <span class="info-icon">⚖️</span>
-                    <div class="info-text">Our legal team will review agreements for compliance violations</div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <div class="step-title">We will keep you updated as your claim progresses.</div>
+                    </div>
                 </div>
-                <div class="info-item">
-                    <span class="info-icon">💰</span>
-                    <div class="info-text">Submit formal complaints and negotiate compensation on your behalf</div>
-                </div>
-            </div>
-            
-            <div class="main-text">
-                The entire process typically takes 8-16 weeks, and we'll keep you updated every step of the way. You don't need to do anything else - we handle everything from here!
             </div>
             
             <div class="highlight-box">
-                <h3>No Win, No Fee Promise</h3>
-                <p>Remember: You pay nothing unless we successfully secure compensation for you. It's completely risk-free!</p>
+                <p>The FCA's ongoing investigation into car finance means that lenders are currently paused from issuing final responses until December 2025. However, by submitting your claim now, you are ensuring that your case is already in line for review when the process resumes.</p>
+                
+                <p>You can read more about the FCA's review here: <a href="https://www.fca.org.uk/consumers/car-finance-complaints" class="info-link">https://www.fca.org.uk/consumers/car-finance-complaints</a></p>
             </div>
             
-            <div style="text-align: center;">
-                <a href="{{portalLink}}" class="cta-button">Track Your Claim Progress</a>
+            <p>We'll keep you informed every step of the way, and if you have any questions, feel free to reply to this email. You can also check your claim's progress anytime through our app:</p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="{{portalLink}}" class="cta-button">Track My Claims</a>
             </div>
             
-            <div class="main-text">
-                Thank you for choosing us to handle your car finance claim. We're committed to getting you the compensation you deserve.
-            </div>
+            <p>Best regards,<br>
+            {{brand}}</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2023 {{brand}}. All rights reserved.</p>
         </div>
     </div>
 </body>

@@ -6,64 +6,54 @@
     <title>Hey {{firstName}}, you're still not fully set up ✍️</title>
     <style>
         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            line-height: 1.6;
+            background-color: #FFFFFF;
+            color: #333;
         }
         .container {
             max-width: 600px;
             margin: 0 auto;
-            background-color: #FFFFFF;
-            border-radius: 8px;
-            overflow: hidden;
+            background-color: #ffffff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .header {
-            background-color: #F8F8F8;
-            padding: 20px;
             text-align: center;
-            border-bottom: 2px solid #5B34C8;
+            padding: 40px 20px;
+            background-color: #F8F8F8;
+            border-bottom: 3px solid #e9ecef;
         }
         .logo {
-            max-width: 150px;
+            max-width: 200px;
             height: auto;
         }
         .content {
-            padding: 30px;
+            padding: 40px 30px;
         }
         .title {
             color: #2c3e50;
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
             margin-bottom: 20px;
             text-align: center;
         }
         .section {
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
         .section h3 {
-            color: #5B34C8;
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-        .section p {
-            color: #555;
+            color: #34495e;
+            font-size: 20px;
             margin-bottom: 15px;
-        }
-        .section ul {
-            color: #555;
-            padding-left: 20px;
-        }
-        .section li {
-            margin-bottom: 8px;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
         }
         .highlight-box {
             background-color: #B8FF8D;
             color: #2c3e50;
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 10px;
             margin: 20px 0;
             text-align: center;
             border: 2px solid #5B34C8;
@@ -74,72 +64,74 @@
             color: white;
             padding: 15px 30px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 50px;
             font-weight: bold;
+            font-size: 16px;
             margin: 20px 0;
-            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 15px rgba(91, 52, 200, 0.4);
+            transition: all 0.3s ease;
         }
         .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(91, 52, 200, 0.6);
             background-color: #4A2BA3;
         }
         .footer {
-            background-color: #F8F8F8;
-            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
             text-align: center;
-            color: #666;
-            font-size: 12px;
+            padding: 20px;
+            font-size: 14px;
         }
-        @media (max-width: 600px) {
-            .container {
-                margin: 10px;
-                border-radius: 0;
-            }
-            .content {
-                padding: 20px;
-            }
-            .title {
-                font-size: 20px;
-            }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .stats {
+            background-color: #e8f4fd;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .greeting {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .main-text {
+            margin-bottom: 20px;
+            line-height: 1.8;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Header with Logo -->
         <div class="header">
-            <img src="https://cdn.prod.website-files.com/66694ee74c4ff0ae3216508b/672c92d8a682009c4c78c21f_rmc_logo-p-800.png" alt="{{brand}} Logo" class="logo">
+            <img src="{{brand_logo}}" alt="{{brand}}" class="logo">
         </div>
         
+        <!-- Main Content -->
         <div class="content">
             <h1 class="title">Hey {{firstName}}, you're still not fully set up ✍️</h1>
             
-            <div class="section">
-                <p>Hi {{firstName}},</p>
-                <p>It's been two weeks since you started your claim, but you're still not fully set up. We're concerned you might miss out on your compensation!</p>
+            <div class="greeting">
+                Hi {{firstName}},
+            </div>
+            <div class="main-text">
+                Two weeks ago, you started your Car Finance Claim with us but didn't manage to complete it. Here's what's missing:
+                <br><br>
+                ✅ A signature for the letter of authority and no win no fee agreement
+                <br><br>
+                This step allows your solicitor to begin working on your claim immediately. If you have any questions, feel free to call or WhatsApp us. Our team is always happy to help!
+                <br><br>
+                📲 Sign here to complete your claim:
             </div>
             
-            <div class="section">
-                <h3>What's holding you back?</h3>
-                <p>We understand there might be concerns. Here's what happens when you sign:</p>
-                <ul>
-                    <li>✅ We become your legal representatives</li>
-                    <li>🔍 We investigate your car finance agreements</li>
-                    <li>💰 We fight for your compensation</li>
-                    <li>🛡️ You're protected by our no win, no fee guarantee</li>
-                </ul>
-            </div>
-            
-            <div class="highlight-box">
-                <h3 style="color: #2c3e50;">Last Chance Reminder</h3>
-                <p>Don't let this opportunity slip away. Many customers who wait too long miss out entirely. Act now!</p>
-            </div>
-            
-            <div style="text-align: center;">
-                <a href="#" class="cta-button">Complete Setup Now</a>
-            </div>
-            
-            <div class="section">
-                <p>🤝 Need help or have questions? Simply reply to this email and our team will assist you.</p>
-                <p>Let's get you fully set up today! 🚀</p>
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="{{portalLink}}" class="cta-button">Complete My Claim</a>
             </div>
         </div>
     </div>
